@@ -1,5 +1,4 @@
-package me.asd.clock;
-
+import me.asd.clock.TimeSource;
 import me.asd.observer.Observable;
 
 /**

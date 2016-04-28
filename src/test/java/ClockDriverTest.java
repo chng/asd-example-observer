@@ -1,5 +1,3 @@
-import me.asd.clock.MockClockSink;
-import me.asd.clock.MockClockSource;
 import org.junit.Before;
 import org.junit.Test;
 
