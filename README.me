@@ -2,4 +2,11 @@
 
 1 向可重用的方向演变. 对于一个类,有可能向其他人提供可用性. 应剥离上层的业务逻辑.
 2 推模式和拉模式的区别和优缺点.
+  拉模式: 在通知Observer时, Subject不把数据传给Observer, 而是在Observer在收到通知时,由Observer自己获取数据.
+         优点: Observer的自主权大, 可以只获取所需要的数据.
+         缺点: Observer如果对数据感兴趣, 必须持有一个或多个Source对象, 从Source询问数据. (如果Observer只对通知的有无感兴趣,则不需持有任何Source)
+  推模式: 在通知Observer的同时也把数据带给Observer.
+         优点: Observer会获取到什么数据是Subject知道的.
+         缺点: 如果不同的Observer对不同的数据类型感兴趣, 那么数据只能装箱为Object后带给Observer, 意义模糊.
+
 
