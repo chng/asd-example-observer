@@ -1,3 +1,8 @@
+package me.asd.clock;
+
+import me.asd.observer.Observable;
+import me.asd.observer.Subject;
+
 /**
  * Created by chn on 16/4/27.
  */
@@ -10,11 +15,13 @@ public class ClockSource extends Clock implements Observable {
         observable.registerObserver(timeSink);
     }
 
+    @Override
     public void setTime(int hour, int minute, int second) {
         super.setTime(hour, minute, second);
         notifyObservers();
     }
 
+    @Override
     public void tic() {
         super.tic();
         notifyObservers();

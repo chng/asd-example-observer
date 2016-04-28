@@ -1,3 +1,7 @@
+package me.asd.clock;
+
+import me.asd.observer.Observable;
+
 /**
  * Created by chn on 16/4/27.
  */

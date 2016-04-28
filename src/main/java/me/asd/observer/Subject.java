@@ -1,3 +1,5 @@
+package me.asd.observer;
+
 import com.google.common.collect.Lists;
 
 import java.util.List;
@@ -21,7 +23,7 @@ public class Subject {
         clockSinks.add(timeSink);
     }
 
-    public void update() {
-
-    }
+//    public void update() {
+//
+//    }
 }
