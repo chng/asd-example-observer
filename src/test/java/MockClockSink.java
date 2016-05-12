@@ -1,10 +1,10 @@
 import me.asd.clock.TimeSource;
-import me.asd.observer.Observable;
+import me.asd.observer.Observer;
 
 /**
  * Created by chn on 16/4/27.
  */
-public class MockClockSink implements Observable {
+public class MockClockSink implements Observer {
 
     int hour = 0;
     int minute  = 0;

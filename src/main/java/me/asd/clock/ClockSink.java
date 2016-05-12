@@ -1,11 +1,11 @@
 package me.asd.clock;
 
-import me.asd.observer.Observable;
+import me.asd.observer.Observer;
 
 /**
  * Created by chn on 16/4/27.
  */
-public class ClockSink implements Observable {
+public class ClockSink implements Observer {
 
     int hour = 0;
     int minute  = 0;

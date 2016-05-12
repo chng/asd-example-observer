@@ -1,7 +1,7 @@
 import me.asd.clock.ClockSink;
 import me.asd.clock.ClockSmile;
 import me.asd.clock.ClockSource;
-import me.asd.observer.Observable;
+import me.asd.observer.Observer;
 import org.junit.Test;
 
 /**
@@ -12,8 +12,8 @@ public class ClockTest {
     @Test
     public void test() throws InterruptedException {
         ClockSource clockSource = new ClockSource();
-        Observable clockSink = new ClockSink(clockSource);
-        Observable clockSimle = new ClockSmile();
+        Observer clockSink = new ClockSink(clockSource);
+        Observer clockSimle = new ClockSmile();
 
         clockSource.setTime(0,0,0);
         clockSource.registerObserver(clockSink);

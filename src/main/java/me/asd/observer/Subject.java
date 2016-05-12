@@ -9,17 +9,17 @@ import java.util.List;
  */
 public class Subject {
 
-    List<Observable> clockSinks = Lists.newLinkedList();
+    List<Observer> clockSinks = Lists.newLinkedList();
 
     public void notifyObservers() {
         if(clockSinks!=null) {
-            for (Observable clockObserver : clockSinks) {
+            for (Observer clockObserver : clockSinks) {
                 clockObserver.update();
             }
         }
     }
 
-    public void registerObserver(Observable timeSink) {
+    public void registerObserver(Observer timeSink) {
         clockSinks.add(timeSink);
     }
 

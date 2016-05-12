@@ -1,17 +1,17 @@
 package me.asd.clock;
 
-import me.asd.observer.Observable;
+import me.asd.observer.Observer;
 import me.asd.observer.Subject;
 
 /**
  * Created by chn on 16/4/27.
  */
-public class ClockSource extends Clock implements Observable {
+public class ClockSource extends Clock implements Observer {
 
     // delegate
     Subject observable = new Subject(); // DIP. FACTORY.
 
-    public void registerObserver(Observable timeSink) {
+    public void registerObserver(Observer timeSink) {
         observable.registerObserver(timeSink);
     }
 
